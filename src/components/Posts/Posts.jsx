@@ -2,23 +2,23 @@ import React from "react";
 
 export const Posts = () => {
   return (
-    <div class="posts-section">
-      <div class="post-bar">
-        <div class="post_topbar">
-          <div class="usy-dt">
+    <div className="posts-section">
+      <div className="post-bar">
+        <div className="post_topbar">
+          <div className="usy-dt">
             <img src="images/resources/us-pic.png" alt="" />
-            <div class="usy-name">
+            <div className="usy-name">
               <h3>John Doe</h3>
               <span>
                 <img src="images/clock.png" alt="" />3 min ago
               </span>
             </div>
           </div>
-          <div class="ed-opts">
-            <a href="#" title="" class="ed-opts-open">
-              <i class="la la-ellipsis-v"></i>
+          <div className="ed-opts">
+            <a href="#" title="" className="ed-opts-open">
+              <i className="la la-ellipsis-v"></i>
             </a>
-            <ul class="ed-options">
+            <ul className="ed-options">
               <li>
                 <a href="#" title="">
                   Edit Post
@@ -47,8 +47,8 @@ export const Posts = () => {
             </ul>
           </div>
         </div>
-        <div class="epi-sec">
-          <ul class="descp">
+        <div className="epi-sec">
+          <ul className="descp">
             <li>
               <img src="images/icon8.png" alt="" />
               <span>Epic Coder</span>
@@ -58,22 +58,22 @@ export const Posts = () => {
               <span>India</span>
             </li>
           </ul>
-          <ul class="bk-links">
+          <ul className="bk-links">
             <li>
               <a href="#" title="">
-                <i class="la la-bookmark"></i>
+                <i className="la la-bookmark"></i>
               </a>
             </li>
             <li>
               <a href="#" title="">
-                <i class="la la-envelope"></i>
+                <i className="la la-envelope"></i>
               </a>
             </li>
           </ul>
         </div>
-        <div class="job_descp">
+        <div className="job_descp">
           <h3>Senior Wordpress Developer</h3>
-          <ul class="job-dt">
+          <ul className="job-dt">
             <li>
               <a href="#" title="">
                 Full Time
@@ -91,7 +91,7 @@ export const Posts = () => {
               view more
             </a>
           </p>
-          <ul class="skill-tags">
+          <ul className="skill-tags">
             <li>
               <a href="#" title="">
                 HTML
@@ -119,49 +119,49 @@ export const Posts = () => {
             </li>
           </ul>
         </div>
-        <div class="job-status-bar">
-          <ul class="like-com">
+        <div className="job-status-bar">
+          <ul className="like-com">
             <li>
               <a href="#">
-                <i class="fas fa-heart"></i> Like
+                <i className="fas fa-heart"></i> Like
               </a>
               <img src="images/liked-img.png" alt="" />
               <span>25</span>
             </li>
             <li>
-              <a href="#" class="com">
-                <i class="fas fa-comment-alt"></i> Comment 15
+              <a href="#" className="com">
+                <i className="fas fa-comment-alt"></i> Comment 15
               </a>
             </li>
           </ul>
           <a href="#">
-            <i class="fas fa-eye"></i>Views 50
+            <i className="fas fa-eye"></i>Views 50
           </a>
         </div>
       </div>
-      {/* <div class="top-profiles">
-        <div class="pf-hd">
+      {/* <div className="top-profiles">
+        <div className="pf-hd">
           <h3>Top Profiles</h3>
-          <i class="la la-ellipsis-v"></i>
+          <i className="la la-ellipsis-v"></i>
         </div>
-        <div class="profiles-slider">
-          <div class="user-profy">
+        <div className="profiles-slider">
+          <div className="user-profy">
             <img src="images/resources/user1.png" alt="" />
             <h3>John Doe</h3>
             <span>Graphic Designer</span>
             <ul>
               <li>
-                <a href="#" title="" class="followw">
+                <a href="#" title="" className="followw">
                   Follow
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="envlp">
+                <a href="#" title="" className="envlp">
                   <img src="images/envelop.png" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="hire">
+                <a href="#" title="" className="hire">
                   hire
                 </a>
               </li>
@@ -170,23 +170,23 @@ export const Posts = () => {
               View Profile
             </a>
           </div>
-          <div class="user-profy">
+          <div className="user-profy">
             <img src="images/resources/user2.png" alt="" />
             <h3>John Doe</h3>
             <span>Graphic Designer</span>
             <ul>
               <li>
-                <a href="#" title="" class="followw">
+                <a href="#" title="" className="followw">
                   Follow
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="envlp">
+                <a href="#" title="" className="envlp">
                   <img src="images/envelop.png" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="hire">
+                <a href="#" title="" className="hire">
                   hire
                 </a>
               </li>
@@ -195,23 +195,23 @@ export const Posts = () => {
               View Profile
             </a>
           </div>
-          <div class="user-profy">
+          <div className="user-profy">
             <img src="images/resources/user3.png" alt="" />
             <h3>John Doe</h3>
             <span>Graphic Designer</span>
             <ul>
               <li>
-                <a href="#" title="" class="followw">
+                <a href="#" title="" className="followw">
                   Follow
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="envlp">
+                <a href="#" title="" className="envlp">
                   <img src="images/envelop.png" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="hire">
+                <a href="#" title="" className="hire">
                   hire
                 </a>
               </li>
@@ -220,23 +220,23 @@ export const Posts = () => {
               View Profile
             </a>
           </div>
-          <div class="user-profy">
+          <div className="user-profy">
             <img src="images/resources/user1.png" alt="" />
             <h3>John Doe</h3>
             <span>Graphic Designer</span>
             <ul>
               <li>
-                <a href="#" title="" class="followw">
+                <a href="#" title="" className="followw">
                   Follow
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="envlp">
+                <a href="#" title="" className="envlp">
                   <img src="images/envelop.png" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="hire">
+                <a href="#" title="" className="hire">
                   hire
                 </a>
               </li>
@@ -245,23 +245,23 @@ export const Posts = () => {
               View Profile
             </a>
           </div>
-          <div class="user-profy">
+          <div className="user-profy">
             <img src="images/resources/user2.png" alt="" />
             <h3>John Doe</h3>
             <span>Graphic Designer</span>
             <ul>
               <li>
-                <a href="#" title="" class="followw">
+                <a href="#" title="" className="followw">
                   Follow
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="envlp">
+                <a href="#" title="" className="envlp">
                   <img src="images/envelop.png" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="hire">
+                <a href="#" title="" className="hire">
                   hire
                 </a>
               </li>
@@ -270,23 +270,23 @@ export const Posts = () => {
               View Profile
             </a>
           </div>
-          <div class="user-profy">
+          <div className="user-profy">
             <img src="images/resources/user3.png" alt="" />
             <h3>John Doe</h3>
             <span>Graphic Designer</span>
             <ul>
               <li>
-                <a href="#" title="" class="followw">
+                <a href="#" title="" className="followw">
                   Follow
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="envlp">
+                <a href="#" title="" className="envlp">
                   <img src="images/envelop.png" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#" title="" class="hire">
+                <a href="#" title="" className="hire">
                   hire
                 </a>
               </li>
@@ -297,22 +297,22 @@ export const Posts = () => {
           </div>
         </div>
       </div> */}
-      <div class="post-bar">
-        <div class="post_topbar">
-          <div class="usy-dt">
+      <div className="post-bar">
+        <div className="post_topbar">
+          <div className="usy-dt">
             <img src="images/resources/us-pic.png" alt="" />
-            <div class="usy-name">
+            <div className="usy-name">
               <h3>John Doe</h3>
               <span>
                 <img src="images/clock.png" alt="" />3 min ago
               </span>
             </div>
           </div>
-          <div class="ed-opts">
-            <a href="#" title="" class="ed-opts-open">
-              <i class="la la-ellipsis-v"></i>
+          <div className="ed-opts">
+            <a href="#" title="" className="ed-opts-open">
+              <i className="la la-ellipsis-v"></i>
             </a>
-            <ul class="ed-options">
+            <ul className="ed-options">
               <li>
                 <a href="#" title="">
                   Edit Post
@@ -341,8 +341,8 @@ export const Posts = () => {
             </ul>
           </div>
         </div>
-        <div class="epi-sec">
-          <ul class="descp">
+        <div className="epi-sec">
+          <ul className="descp">
             <li>
               <img src="images/icon8.png" alt="" />
               <span>Epic Coder</span>
@@ -352,27 +352,27 @@ export const Posts = () => {
               <span>India</span>
             </li>
           </ul>
-          <ul class="bk-links">
+          <ul className="bk-links">
             <li>
               <a href="#" title="">
-                <i class="la la-bookmark"></i>
+                <i className="la la-bookmark"></i>
               </a>
             </li>
             <li>
               <a href="#" title="">
-                <i class="la la-envelope"></i>
+                <i className="la la-envelope"></i>
               </a>
             </li>
             <li>
-              <a href="#" title="" class="bid_now">
+              <a href="#" title="" className="bid_now">
                 Bid Now
               </a>
             </li>
           </ul>
         </div>
-        <div class="job_descp">
+        <div className="job_descp">
           <h3>Senior Wordpress Developer</h3>
-          <ul class="job-dt">
+          <ul className="job-dt">
             <li>
               <a href="#" title="">
                 Full Time
@@ -390,7 +390,7 @@ export const Posts = () => {
               view more
             </a>
           </p>
-          <ul class="skill-tags">
+          <ul className="skill-tags">
             <li>
               <a href="#" title="">
                 HTML
@@ -418,43 +418,43 @@ export const Posts = () => {
             </li>
           </ul>
         </div>
-        <div class="job-status-bar">
-          <ul class="like-com">
+        <div className="job-status-bar">
+          <ul className="like-com">
             <li>
               <a href="#">
-                <i class="fas fa-heart"></i> Like
+                <i className="fas fa-heart"></i> Like
               </a>
               <img src="images/liked-img.png" alt="" />
               <span>25</span>
             </li>
             <li>
-              <a href="#" class="com">
-                <i class="fas fa-comment-alt"></i> Comment 15
+              <a href="#" className="com">
+                <i className="fas fa-comment-alt"></i> Comment 15
               </a>
             </li>
           </ul>
           <a href="#">
-            <i class="fas fa-eye"></i>Views 50
+            <i className="fas fa-eye"></i>Views 50
           </a>
         </div>
       </div>
-      <div class="posty">
-        <div class="post-bar no-margin">
-          <div class="post_topbar">
-            <div class="usy-dt">
+      <div className="posty">
+        <div className="post-bar no-margin">
+          <div className="post_topbar">
+            <div className="usy-dt">
               <img src="images/resources/us-pc2.png" alt="" />
-              <div class="usy-name">
+              <div className="usy-name">
                 <h3>John Doe</h3>
                 <span>
                   <img src="images/clock.png" alt="" />3 min ago
                 </span>
               </div>
             </div>
-            <div class="ed-opts">
-              <a href="#" title="" class="ed-opts-open">
-                <i class="la la-ellipsis-v"></i>
+            <div className="ed-opts">
+              <a href="#" title="" className="ed-opts-open">
+                <i className="la la-ellipsis-v"></i>
               </a>
-              <ul class="ed-options">
+              <ul className="ed-options">
                 <li>
                   <a href="#" title="">
                     Edit Post
@@ -483,8 +483,8 @@ export const Posts = () => {
               </ul>
             </div>
           </div>
-          <div class="epi-sec">
-            <ul class="descp">
+          <div className="epi-sec">
+            <ul className="descp">
               <li>
                 <img src="images/icon8.png" alt="" />
                 <span>Epic Coder</span>
@@ -494,22 +494,22 @@ export const Posts = () => {
                 <span>India</span>
               </li>
             </ul>
-            <ul class="bk-links">
+            <ul className="bk-links">
               <li>
                 <a href="#" title="">
-                  <i class="la la-bookmark"></i>
+                  <i className="la la-bookmark"></i>
                 </a>
               </li>
               <li>
                 <a href="#" title="">
-                  <i class="la la-envelope"></i>
+                  <i className="la la-envelope"></i>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="job_descp">
+          <div className="job_descp">
             <h3>Senior Wordpress Developer</h3>
-            <ul class="job-dt">
+            <ul className="job-dt">
               <li>
                 <a href="#" title="">
                   Full Time
@@ -527,7 +527,7 @@ export const Posts = () => {
                 view more
               </a>
             </p>
-            <ul class="skill-tags">
+            <ul className="skill-tags">
               <li>
                 <a href="#" title="">
                   HTML
@@ -555,62 +555,62 @@ export const Posts = () => {
               </li>
             </ul>
           </div>
-          <div class="job-status-bar">
-            <ul class="like-com">
+          <div className="job-status-bar">
+            <ul className="like-com">
               <li>
                 <a href="#">
-                  <i class="fas fa-heart"></i> Like
+                  <i className="fas fa-heart"></i> Like
                 </a>
                 <img src="images/liked-img.png" alt="" />
                 <span>25</span>
               </li>
               <li>
-                <a href="#" class="com">
-                  <i class="fas fa-comment-alt"></i> Comment 15
+                <a href="#" className="com">
+                  <i className="fas fa-comment-alt"></i> Comment 15
                 </a>
               </li>
             </ul>
             <a href="#">
-              <i class="fas fa-eye"></i>Views 50
+              <i className="fas fa-eye"></i>Views 50
             </a>
           </div>
         </div>
-        <div class="comment-section">
-          <a href="#" class="plus-ic">
-            <i class="la la-plus"></i>
+        <div className="comment-section">
+          <a href="#" className="plus-ic">
+            <i className="la la-plus"></i>
           </a>
-          <div class="comment-sec">
+          <div className="comment-sec">
             <ul>
               <li>
-                <div class="comment-list">
-                  <div class="bg-img">
+                <div className="comment-list">
+                  <div className="bg-img">
                     <img src="images/resources/bg-img1.png" alt="" />
                   </div>
-                  <div class="comment">
+                  <div className="comment">
                     <h3>John Doe</h3>
                     <span>
                       <img src="images/clock.png" alt="" /> 3 min ago
                     </span>
                     <p>Lorem ipsum dolor sit amet, </p>
-                    <a href="#" title="" class="active">
-                      <i class="fa fa-reply-all"></i>Reply
+                    <a href="#" title="" className="active">
+                      <i className="fa fa-reply-all"></i>Reply
                     </a>
                   </div>
                 </div>
                 <ul>
                   <li>
-                    <div class="comment-list">
-                      <div class="bg-img">
+                    <div className="comment-list">
+                      <div className="bg-img">
                         <img src="images/resources/bg-img2.png" alt="" />
                       </div>
-                      <div class="comment">
+                      <div className="comment">
                         <h3>John Doe</h3>
                         <span>
                           <img src="images/clock.png" alt="" /> 3 min ago
                         </span>
                         <p>Hi John </p>
                         <a href="#" title="">
-                          <i class="fa fa-reply-all"></i>Reply
+                          <i className="fa fa-reply-all"></i>Reply
                         </a>
                       </div>
                     </div>
@@ -618,11 +618,11 @@ export const Posts = () => {
                 </ul>
               </li>
               <li>
-                <div class="comment-list">
-                  <div class="bg-img">
+                <div className="comment-list">
+                  <div className="bg-img">
                     <img src="images/resources/bg-img3.png" alt="" />
                   </div>
-                  <div class="comment">
+                  <div className="comment">
                     <h3>John Doe</h3>
                     <span>
                       <img src="images/clock.png" alt="" /> 3 min ago
@@ -633,18 +633,18 @@ export const Posts = () => {
                       finibus at.
                     </p>
                     <a href="#" title="">
-                      <i class="fa fa-reply-all"></i>Reply
+                      <i className="fa fa-reply-all"></i>Reply
                     </a>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="post-comment">
-            <div class="cm_img">
+          <div className="post-comment">
+            <div className="cm_img">
               <img src="images/resources/bg-img4.png" alt="" />
             </div>
-            <div class="comment_box">
+            <div className="comment_box">
               <form>
                 <input type="text" placeholder="Post a comment" />
                 <button type="submit">Send</button>
@@ -653,11 +653,11 @@ export const Posts = () => {
           </div>
         </div>
       </div>
-      <div class="process-comm">
-        <div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
+      <div className="process-comm">
+        <div className="spinner">
+          <div className="bounce1"></div>
+          <div className="bounce2"></div>
+          <div className="bounce3"></div>
         </div>
       </div>
     </div>
