@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import userImage from "@/assets/images/resources/user-pic.png";
 import { CreateJobPopup } from "./CreateJobPopup";
+import { CreateProjectPopup } from "./CreateProjectPopup";
 
 export const CreateBar = () => {
-
   return (
     <div className="post-topbar">
       <div className="user-picy">
@@ -19,34 +19,12 @@ export const CreateBar = () => {
           <li>
             <a className="post-jb active" href="#" title="">
               Post a Job
-              <CreateJobPopup />
             </a>
           </li>
         </ul>
       </div>
+      <CreateJobPopup />
+      <CreateProjectPopup />
     </div>
   );
 };
-
-// const post = {
-//   authot: {
-//     name: 'Атабек',
-//     photoURL: '',
-//   },
-//   rote: 'Epic Coder',
-//   title: 'Senior Frontend',
-//   jobType: 'Full Time',
-//   rate: 30,
-//   description: 'один два три',
-//   tags: 'html,php,css,react',
-//   location: BIsh,
-//   createdAt: new Date(),
-//   likes: [
-//     {
-//       photoURL: '',
-//       userId: 'dsa'
-//     },
-//   ],
-//   comments: [],
-//   views: 0,
-// }

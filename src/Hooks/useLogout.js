@@ -1,34 +1,34 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signOut } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { useState } from "react";
 import { auth, firestore } from "../firebase/config";
 import { useAuthContext } from "./useAuthContext";
 
-export const useLogin = () => {
+export const useLogout = () => {
   const [error, setError] = useState(null);
   const [isPending, setIsPending] = useState(false);
-  const { dispatch } = useAuthContext();
+  const { dispatch, user } = useAuthContext();
 
-  const login = async (email, password) => {
+  const logout = async () => {
     setError(null);
     setIsPending(true);
 
     try {
-      const { user } = await signInWithEmailAndPassword(auth, email, password); // Юзер проходим авторизацию
-
       const usersRef = doc(firestore, "users", user.uid);
+      await setDoc(usersRef, {
+        isOnline: false
+      }, { merge: true });
+      await signOut(auth); // Выводим юзера из аккаунта
 
-      await setDoc(usersRef, { isOnline: true }, { merge: true });
-      await dispatch({ type: "LOGIN", payload: user });
+      dispatch({ type: "LOGOUT" });
 
       setIsPending(false);
       setError(null);
-      return user;
     } catch (err) {
       setError(err.message);
       setIsPending(false);
     }
   };
 
-  return { login, isPending, error };
+  return { logout, error, isPending };
 };

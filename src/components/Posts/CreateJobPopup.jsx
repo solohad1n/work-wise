@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export const CreateJobPopup = () => {
   return (
@@ -39,19 +39,32 @@ export const CreateJobPopup = () => {
                 </div>
               </div>
               <div className="col-lg-12">
-                <textarea name="description" placeholder="Description"></textarea>
+                <textarea
+                  name="description"
+                  placeholder="Description"
+                ></textarea>
               </div>
               <div className="col-lg-12">
                 <ul>
-                  <li><button className="active" type="submit" value="post">Post</button></li>
-                  <li><a href="#" title="">Cancel</a></li>
+                  <li>
+                    <button className="active" type="submit" value="post">
+                      Post
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#" title="">
+                      Cancel
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
           </form>
         </div>
-        <a href="#" title=""><i className="la la-times-circle-o"></i></a>
+        <a href="#" title="">
+          <i className="la la-times-circle-o"></i>
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};
