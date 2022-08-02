@@ -2,40 +2,67 @@ import { Timestamp } from "firebase/firestore";
 import React, { useState } from "react";
 import { addDocument } from '../../hooks/useDocument'
 
+const styles = {
+  tag: {
+    display: "inline-block",
+    color: "#b2b2b2",
+    fontSize: "14px",
+    backgroundColor: "#f1f1f1",
+    borderRadius: "30px",
+    padding: "7px 15px",
+    fontWeight: "500",
+  }
+}
+
 export const CreateJobPopup = () => {
   const [job, setJob] = useState({
     title: '',
     role: 'Разра',
-    skills: '',
+    tags: [],
     rate: '',
     jobType: 'Full Time',
     description: '',
   })
+
+  const [tempSkill, setTempSkill] = useState('')
+
   const handleChange = (event) => {
     setJob((prev) => ({ ...prev, [event.target.name]: event.target.value }))
   }
 
+  const handleChangeSkills = (event) => {
+    event.stopPropagation()
+    if (event.key === ' ') {
+      if (job.tags.includes(event.target.value)) return setTempSkill('')
+      setJob((prev) => ({
+        ...prev,
+        tags: [...job.tags, tempSkill],
+      }))
+      setTempSkill('')
+      return
+    }
+    setTempSkill(event.target.value)
+    return
+  }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    const { error } = await addDocument('posts', {
+    const response = await addDocument('posts', {
       ...job,
       createdAt: Timestamp.fromDate(new Date()),
       author: {
         name: 'Ислам',
         photoURL: 'https://i.pinimg.com/originals/3b/6f/03/3b6f0322ae00b2680fbdb1e183b83368.png',
       },
-      tags: ['aaaa', 'bbbb', 'cccc'],
       comments: [],
       likes: [],
       location: 'Bishkek',
       views: 0,
     })
-    console.log(error)
+    if (response) {
+      console.log(response)
+    }
   }
-
-
-
 
   return (
     <div className="post-popup job_post">
@@ -60,7 +87,18 @@ export const CreateJobPopup = () => {
                 </div>
               </div>
               <div className="col-lg-12">
-                <input onSubmit={handleChange} type="text" name="skills" placeholder="Skills" />
+                <input value={tempSkill} onChange={handleChangeSkills}
+                  onKeyDown={handleChangeSkills}
+                  type="text" name="skills" placeholder="Skills" />
+                {Array.isArray(job.tags) && job.tags.length > 0 && (
+                  <ul className="skill-tags">
+                    {job.tags.map((skill) => (
+                      <li>
+                        <span style={styles.tag} href="">{skill}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
               <div className="col-lg-6">
                 <div className="price-br">
