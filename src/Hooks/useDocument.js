@@ -31,11 +31,11 @@ export const getDocumentRealTime = (collectionName, id) => {
 };
 
 export const addDocument = async (collectionName, newDoc) => {
-  const collectionRef = collection(firestore, collectionName)
+  const collectionRef = collection(firestore, collectionName);
 
   try {
-    return await addDoc(collectionRef, newDoc)
+    return await addDoc(collectionRef, newDoc);
   } catch (err) {
-    return (err.message)
+    return err.message;
   }
-}
+};
