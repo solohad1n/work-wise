@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSignup } from "../../hooks/useSignup";
 
-export const SignUp = () => {
+export const SignUp = ({ children }) => {
+  const { signup } = useSignup()
+  const [form, setForm] = useState({
+    username: '',
+    category: '',
+    country: '',
+    password: '',
+    confirmPassword: '',
+  })
+
+  const handleSubmit = (event) => {
+    setForm((prev) => ({ ...prev, [event.target.name]: event.target.name }))
+  }
+
+  const handleSubmit = async () => {
+    if (!confi)
+  }
+
+
   return (
     <div className="login-sec">
+      {children && children}
       <div className="sign_in_sec current">
         <div className="signup-tab">
           <i className="fa fa-long-arrow-left"></i>

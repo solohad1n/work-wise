@@ -1,11 +1,12 @@
 import React from "react";
 import { Typography } from "@mui/material";
-export const Login = () => {
+
+export const Login = ({ children }) => {
   return (
     <div className="login-sec">
+      {children && children}
       <div className="sign_in_sec current">
         <Typography variant="h3">Sign in</Typography>
-        <h3>Sign in</h3>
         <form>
           <div className="row">
             <div className="col-lg-12 no-pdd">
