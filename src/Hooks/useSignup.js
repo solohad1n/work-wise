@@ -28,7 +28,7 @@ export const useSignup = () => {
 
       await setDoc(usersRef, {
         isOnline: true,
-        displayName: email,
+        displayName: name,
         photoURL: 'https://www.misemacau.org/wp-content/uploads/2015/11/avatar-placeholder-01-300x250.png',
         email: email + "@workwise.com",
       });
